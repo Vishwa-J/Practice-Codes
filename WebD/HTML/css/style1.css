@@ -1,0 +1,18 @@
+img:hover{
+    background-color: white;
+}
+/* hover is a pseudo style that's why it's used with a colon(:) sign in front of it. Its task is to change the color when we hover it.  */
+.apple {
+    background-color: black;
+}
+.circular{
+    border-radius: 100%;
+}
+.alaram{
+    background-color: blueviolet;
+    color: aliceblue;
+}
+/* here we use .apple as apple is a class so that we can give different colours to different images */
+#heading{
+    color: azure;
+}

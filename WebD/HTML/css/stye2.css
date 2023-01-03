@@ -1,0 +1,16 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.blog{
+    background-color: aqua;
+    margin: 100px;
+}
+#para1{
+    background-color: aquamarine;
+    font-style: italic;
+}
+.box-model{
+    border: red 50px solid;
+    padding-top: 100px;
+    margin-top: 100px;
+}
