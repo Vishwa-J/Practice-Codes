@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <!-- style tag is a part of css, it's always in the head tag below the title tag -->
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+        /* border-style you can have more elaborate assessment on MDN CSS border style. if 3 border style is given then 1st is for top then left&right and last is for bottom  and accordingly. Similarly you can have one, two, three, four*/
+        hr {
+            background-color: none;
+            border-color: red;
+            border-style: dotted none none;
+            border-width: 5px;
+            height: 0px;
+            width: 10%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- action to store data in the server -->
+    <!-- action is after hitting submit button where the info would save nd text/plain is to get rid of weird number nd text in the mail -->
+    <form action="mailto:vishwajoshi369@gmail.com" method="post" enctype="text/plain">
+        <h1>Payment Form</h1>
+        <p>Required fields are followed by *</p>
+        <h2>Contact Information</h2>
+        <p>Name: * <input type="text" name="name" required></p>
+        <!-- fieldset is used to create a box -->
+            <fieldset>
+                <legend>Gender * </legend>
+                <p>
+            Male <input type="radio" name="gender" id="male" required>
+            Female <input type="radio" name="gender" id="female" required>
+        </p>
+    </fieldset>
+    <fieldset>
+    <p>Address: <textarea name="address" id="address" cols="100" rows="8"></textarea></p>
+</fieldset>
+<p>Email: <input type="email" name="email" id="email"></p>
+<p>Pincode: <input type="number" name="pincode" id="pincode"></p>
+<label>Any review:</label>
+<textarea name="review" id="review" cols="30" rows="10"></textarea>
+<hr>
+<h2>Payment Information</h2>
+<p>Card Type: 
+    <select name="card_type" id="card_type">
+        <option value="">--Select a Card Type--</option>
+        <option value="visa">Visa</option>
+        <option value="mastercard">MasterCard</option>
+        <option value="rupay">Rupay</option>
+    </select>
+</p>
+<p>
+    Card Number * <input type="number" name="card_number" id="card_number" required>
+</p>
+<p>
+    Expiration Date: <input type="date" name="exp_date" id="exp_date">
+</p>
+<p>CVV * <input type="password" name="cvv" id="cvv" required></p>
+<input type="submit" value="Pay Now">
+    </form>
+</body>
+</html>

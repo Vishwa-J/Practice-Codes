@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishwa</title>
+    <style>
+        /* internal css */
+        hr {
+            border-color: red;
+            border-style:dotted none none none;
+            width: 20%;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<!-- priority order in css>>id selectors>class selectors>tag selectors -->
+
+<body style="background-color:aqua;" text="black" link="yellow" vlink="purple" alink="blue">
+    <!--This is a comment-->
+    <!-- &lt; is used for the open tag just like that there are codes for the reserved tags which u can find online-->
+   <h1>Welcome to Vishwa's First page &lt;h1&gt;</h1> 
+   <hr>
+   <!-- you can use more than one class in the same tag in class selector whereas u can use only one id in the id selector -->
+   <h2 id="heading circular">Welcome to <br>Vishwa's First page</h2> 
+   <!-- here in id if we add two different ids then everything will be gone -->
+   <hr>
+   <!-- what to do if we have two img src but want different background color for both then we have to use class -->
+   <img class="apple"src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/microsoft/309/red-apple_1f34e.png" alt="apple">
+
+   <img class="alaram circular"src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/alarm-clock_23f0.png" alt="alarm clock">
+
+   <h3 class="alaram circular">Welcome to Vishwa's First page</h3> 
+   <h4 id="heading">Welcome to Vishwa's First page</h4> 
+   <h5>Welcome to Vishwa's First page</h5> 
+   <h6>Welcome to Vishwa's First page</h6> 
+   <p> <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. </b> <i><em> vero soluta perspiciatis nostrum mollitia tenetur sapiente nobis voluptates consectetur culpa dicta beatae tempora sunt, aspernatur fugiat accusamus maxime, ad impedit, odio voluptas quae rem placeat? Dolorem facere modi commodi magnam, alias praesentium reiciendis <em>qui est perferendis blanditiis veniam iste aspernatur </em>illo corporis vitae, sed obcaecati non beatae ex! Exercitationem itaque<small> quibusdam voluptate perspiciatis ipsum harum saepe autem, te</small>mporibus sed! Enim praesentium rerum nulla iste eos cum animi ipsam veritatis? Vero voluptas alias, 10<sup>2</sup>,10<sub>2</sub> aliquam optio quo, nostrum natus aut distinctio nihil doloremque, rem autem ex. Nobis veniam tempora beatae cum quidem.</em></i></p>
+   <hr>
+   <h1>Shopping list</h1>
+   <ul>
+    <li>Milk</li>
+    <li>Maggie</li>
+    <li>Chocolates</li>
+    <li>graffitti</li>
+   </ul>
+   <hr>
+   <h1>Maggie Recipe</h1>
+   <ol type="I">
+    <!-- for smiley emoji -->
+    <li>&#128512;</li>
+    <li>Bokdgnd</li>
+    <li>Add some veggies like:-
+    <ul>
+        <li>vdifvj</li>
+        <li>vdifvj</li>
+        <li>vdifvj</li>
+    </ul>
+
+    </li>
+    <li>Bdfkgnd</li>
+    <li>Bokkgnd</li>
+   </ol>
+   <!--Target is used to open link in a new page -->
+   <hr>
+   <a href="https://www.google.com"target="_blank">Google<a>
+    <br>
+    <a href="page2.html" target="_blank">Page 2</a>
+    <br>
+    <a href="https://drive.google.com/drive/my-drive" target="_blank" rel="noopener noreferrer">Gdrive</a>
+    <br>
+    <a href="C:\Users\hp\OneDrive\Pictures\Camera Roll\WIN_20211226_19_14_22_Pro.jpg" target="_blank">Photo</a>
+    <br>
+    <!-- alt is if any glitch is there in the image it would show this text. -->
+    <!-- To keep image and text side by side we use table -->
+    <table cellspacing="20">
+        <tr>
+            <td> <img src="Vishwa.jpg" alt="This is an image" width="350"></td>
+            <td><p> This is Vishwa Joshi</p>
+            <p>I am a 2nd year student</p></td>
+        </tr>
+    </table>
+    <img src="Vishwa.jpg" alt="This is an image" width="350">
+   <hr>
+    <!-- Control is used to put controls like play pause in the video, "autoplay" attribute can play the moment someone opens the website,loop will help in to start the video again, poster is like a thumbnail for the video, muted helps in keep the video on mute by default.-->
+    <!-- iframe is used to embed a utube video or any other website's video on our website simply you have to go to share on the utube video go to embedd and copy the code-->
+    <video src="C:\WebD\video.mp4" width="400" controls loop muted poster="Vishwa.jpg"></video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2QR11oDukn4" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://apnikaksha.teachx.in/" frameborder="0" width="560" height="600"></iframe>
+    <!-- table to show a table, thead for the head tbody for the body and tfooter for the footer th for the heafing which will be bold and td foe table data and tr for table row, colspan to combine n number of columns-->
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Subject</th>
+            <th>Theory</th>
+            <th>Practi😂😂cal</th>
+            <th>Total Marks</th>
+            <th>Grades</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>English</td>
+            <td>75</td>
+            <td>-</td>
+            <td>75</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Physics</td>
+            <td>54</td>
+            <td>56</td>
+            <td>63</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>Maths</td>
+            <td>26</td>
+            <td>12</td>
+            <td>65</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>Social Science</td>
+            <td>54</td>
+            <td>65</td>
+            <td>78</td>
+            <td>D</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <th colspan="5">Result:Pass</th>
+    </tfoot>
+    </table>
+</body>
+</html>
