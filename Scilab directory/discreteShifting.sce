@@ -1,0 +1,17 @@
+clear; clf; clc; 
+xp = [1 1 2 3 4 3 2 1 1 0]; 
+nd = 5; 
+N = length(xp); 
+n = -3*N:3*N; 
+x = [zeros(1,3*N),xp,zeros(1,(2*N+1))]; 
+y = [zeros(1,3*N+nd),xp,zeros(1,(2*N+1)-nd)];
+subplot(211); 
+plot2d3(n,x); 
+xlabel("n","fontsize",4); 
+ylabel("x","fontsize",4);
+title("The digital pulse","fontsize",4);
+subplot(212); 
+plot2d3(n,y); 
+xlabel("n","fontsize",4);
+ylabel("y","fontsize",4);
+title("The advanced digital pulse nd= 6 ","fontsize",4);
