@@ -1,0 +1,95 @@
+body{
+    margin: 0 0 0 0;
+    /* margin on all the 4 sides would be 0 */
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;}
+h1{
+   /* margin-top: 0;  */
+   /* margin on the top will be 0 */
+   width: 100%;
+   margin: 0 auto 0 auto;
+   font-family: 'Dancing Script', cursive;
+   font-size: 4em;/* 16px=100%=1em*/
+   /* % is more effective than px coz if we change in the settings the font size, in case of pixel it remain the same whereas in case of % it becomes proportionate */
+}
+/* div{
+    display: block;
+} */
+.top-container{
+    background-color: #E4F9F5;
+    padding-top: 100px;
+    /* height: 200px;
+    width: 200px;
+    margin-top: 200px;
+    margin-left: 200px;
+    display: inline-block; */
+    /* position: relative; */
+    /* border-color: black;
+    border: 10px;
+    padding: 20px;
+    border-style:solid; */
+}
+.middle-container{
+    /* background-color: #AB4E68;
+    width: 100%;
+    height: auto;
+    align-content: center; */
+    /* margin-top: 200px;
+    margin-left: 200px;
+    display: inline-block; */
+    /* position: relative; */
+    /* margin-left: 260px; */
+    /* border-color: black; */
+    /* border: 20px; */
+    /* border-style:solid; */
+}
+.bottom-container{
+    /* background-color: yellowgreen;
+    width: 100%;
+    height: auto; */
+    /* margin-top: 500px;
+    margin-left: 400px;
+    display: inline-block;
+    position: fixed;  */
+    /* margin-left: 500px; */
+    /* border-color: black;
+    border: 10px;
+    border-style:solid; */
+}
+.web{
+    text-decoration: underline;
+}
+/* .image{
+    display: inline-block;
+} */
+/* visibility-hidden */
+/* .row{
+    display: flex;
+}
+.column{
+    flex: 33.33%;
+    padding: 5px;
+} */
+.bottom-cloud{
+    position: absolute;
+    margin-left: -315px;
+    margin-top: 50px;
+}
+.top-cloud{
+    position: absolute;
+    margin-left: 166px;
+    margin-top: -64px;
+
+}
+.vishwa{
+    width: auto;
+    height: 500px;
+}
+.computer{
+    width: auto;
+    height: 500px;
+}
+.chillies{
+    width: auto;
+    height: 500px;
+}
