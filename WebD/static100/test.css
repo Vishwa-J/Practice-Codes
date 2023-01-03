@@ -1,0 +1,259 @@
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+.home{
+    background: var(--bg);
+}
+
+/* section{
+    padding:2rem 7%;
+} */
+
+.heading{
+    text-align: center;
+    color:#04A777;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.9)), url(images/backg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 60rem;
+    
+    
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    padding: 0 14rem;
+    color:#04A777;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 0 15rem;
+    color:#eee;
+    text-align:left;
+}
+
+.home-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 9%;
+    z-index: 1000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;}
+
+.home-header a{
+    margin-left: 0%;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    font-family: 'Poppins', sans-serif;
+    color: #04A777;
+    }
+.home-header .navbar {
+    margin-left: 50rem;
+    font-size: 1.7rem;
+     }
+.home-header .navbar a {
+    margin-left: 1rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #04A777;
+    }
+.home-header .logo i {
+    color: #04A777;
+    }
+.home-header .navbar a {
+    margin-left: 2rem;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    }
+    .home-header .icons a,
+    .home-header .icons div {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    color: #10221b;
+    }
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background:var(--black);
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex:1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color:#04A777;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color:#ccc;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
+.wwd .row{
+    display: flex;
+    align-items: center;
+    background:var(--black);
+    flex-wrap: wrap;
+}
+
+h3{
+    padding-left: 150px;;
+    padding-right: 150px;;
+    position: relative;
+    font-size: 25px;
+    margin-top: 20px;
+    color: #f0f0f0;
+    text-align: center;
+  }
+  p{
+    padding-left: 150px;;
+    padding-right: 150px;;
+    position: relative;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #ccc;
+    text-align: left;
+  }
+
+/* media queries  */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    
+
+    
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%; right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right:0;
+    }
+
+    .header .navbar a{
+        color:var(--black);
+        display: block;
+        margin:1.5rem;
+        padding:.5rem;
+        font-size: 2rem;
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}

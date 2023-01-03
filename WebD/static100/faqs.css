@@ -1,0 +1,58 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: monospace;
+} */
+
+.faqs-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.6)), url("https://tse1.mm.bing.net/th?id=OIP.TICSdDXCNqRP84ahF1DxxAHaHa&pid=Api&P=0");
+}
+
+.faqs-container .faqs{
+    width: 950px;
+}
+
+.faqs-container .faqs .faqs-header {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    margin: 10px 0;
+    box-shadow: 1 px 5px rgba(0,0,0,.3);
+    cursor: pointer;
+}
+
+.faqs-container .faqs .faqs-header .icon{
+    display: inline-block;
+    font-size: 50px;
+    height: 68px;
+    width: 50px;
+    line-height: 70px;
+    background-color: #04A777;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+
+}
+
+.faqs-container .faqs .faqs-header h3{
+    display: inline;
+    font-size: 20px;
+}
+
+.faqs-container .faqs .faqs-body{
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    background-color: #f0f0f0;
+    color: black;
+    display: none;
+    font-size: 1.7rem;
+}
+
+.faqs-container .faqs:nth-child(1).faqs-body{
+    display: block;
+}
